@@ -1,0 +1,15 @@
+{
+  "name": "qsh-resource",
+  "version": "1.0.1",
+  "description": "qsh add header and footer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "guanyx",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-util": "^3.0.6",
+    "through2": "^2.0.0"
+  }
+}
