@@ -24,7 +24,13 @@ other script
 var qsh = require('qsh-resource');
 gulp.task('qsh', function(){
     return gulp.src('./*.html')
-        .pipe(qsh())
+        .pipe(qsh({
+            iconfont: 'qsh'
+        }))
         .pipe(gulp.dest('./dist'));
 })
 ```
+
+##Options
+
+*iconfont*为项目的iconfont图标。当前加入的有通常为Iconfont站点中的项目名

@@ -1,6 +1,6 @@
 {
   "name": "qsh-resource",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "qsh add header and footer",
   "main": "index.js",
   "scripts": {

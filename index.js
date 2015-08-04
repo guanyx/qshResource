@@ -5,8 +5,13 @@
  var path = require('path');
 
  function handlerInsert(html, options){
-     html = html.replace('<!-- qshHeader -->', fs.readFileSync(path.join(__dirname, 'head.html')));
-     html = html.replace('<!-- qshFooter -->', fs.readFileSync(path.join(__dirname, 'foot.html')));
+     var headerHtml = fs.readFileSync(path.join(__dirname, 'head.html'));
+     var footerHtml = fs.readFileSync(path.join(__dirname, 'foot.html'));
+     if(options.iconfont){
+         headerHtml += '\r\n<link rel="stylesheet" href="http://www.8673h.com/cdn/css/iconfont/'+options.iconfont+'/iconfont.css">';
+     }
+     html = html.replace('<!-- qshHeader -->', headerHtml);
+     html = html.replace('<!-- qshFooter -->', footerHtml);
      return html;
  }
 
