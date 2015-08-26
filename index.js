@@ -14,6 +14,7 @@
      var temp_obj = {
          domain: options.domain || '/'
      };
+     footerHtml += '';
      headerHtml = compileTpl(headerHtml, temp_obj);
      footerHtml = compileTpl(footerHtml, temp_obj);
      html = html.replace('<!-- qshHeader -->', headerHtml);
@@ -24,6 +25,7 @@
  function compileTpl(str, obj){
      var reg = /{{(.*?)}}/g;
      var result;
+     console.log(str);
      while(result = reg.exec(str)){
          var value = typeof obj[result[1]] === 'undefined' ? '' : obj[result[1]];
          str = str.replace(result[0], value);
