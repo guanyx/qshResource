@@ -8,8 +8,8 @@
      var headerHtml = fs.readFileSync(path.join(__dirname, 'head.html'));
      var footerHtml = fs.readFileSync(path.join(__dirname, 'foot.html'));
      if(options.iconfont){
-         headerHtml += '\r\n<link rel="stylesheet" href="http://www.8673h.com/cdn/css/iconfont/'+options.iconfont+'/iconfont.css">';
-         headerHtml += '\r\n<link rel="stylesheet" href="http://www.8673h.com/cdn/libs/common/'+options.iconfont+'/style.min.css">'
+         headerHtml += '\r\n<link rel="stylesheet" href="/cdn/css/iconfont/'+options.iconfont+'/iconfont.css">';
+         headerHtml += '\r\n<link rel="stylesheet" href="/cdn/libs/common/'+options.iconfont+'/style.min.css">'
      }
      html = html.replace('<!-- qshHeader -->', headerHtml);
      html = html.replace('<!-- qshFooter -->', footerHtml);
