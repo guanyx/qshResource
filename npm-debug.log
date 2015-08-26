@@ -5,7 +5,7 @@
 1 verbose cli   'patch' ]
 2 info using npm@2.11.3
 3 info using node@v0.12.7
-4 info preversion qsh-resource@1.0.13
+4 info preversion qsh-resource@1.0.14
 5 info git [ 'status', '--porcelain' ]
 6 verbose stack Error: Error: Git working directory not clean.
 6 verbose stack D npm-debug.log
